@@ -1,0 +1,19 @@
+plugins.security.disabled: true
+# plugins.security.ssl.http.enabled: false
+
+# subject=C=NL, ST=Brabant, L=Tilburg, O=Cape, OU=software, CN=stelian, emailAddress=stelian1997@yahoo.com
+
+plugins.security.ssl.transport.pemcert_filepath: node1.pem
+plugins.security.ssl.transport.pemkey_filepath: node1-key.pem
+plugins.security.ssl.transport.pemtrustedcas_filepath: root-ca.pem
+plugins.security.ssl.transport.enforce_hostname_verification: false
+plugins.security.ssl.http.enabled: true
+plugins.security.ssl.http.pemcert_filepath: node1.pem
+plugins.security.ssl.http.pemkey_filepath: node1-key.pem
+plugins.security.ssl.http.pemtrustedcas_filepath: root-ca.pem
+plugins.security.authcz.admin_dn:
+  - "CN=DigiCert Global Root CA,OU=www.digicert.com,O=DigiCert Inc,L=TORONTO,ST=ONTARIO,C=US"
+plugins.security.nodes_dn:
+  - "CN=node1.dns.a-record,OU=UNIT,O=ORG,L=TORONTO,ST=ONTARIO,C=CA"
+  - "CN=node2.dns.a-record,OU=UNIT,O=ORG,L=TORONTO,ST=ONTARIO,C=CA"
+# Issuer: C=US, O=DigiCert Inc, OU=www.digicert.com, CN=DigiCert Global Root CA
