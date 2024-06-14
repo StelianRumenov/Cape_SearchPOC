@@ -1,8 +1,7 @@
 import { MongoClient } from "mongodb";
 
 // const url = "mongodb://localhost:27017";
-const url =
-  "mongodb+srv://INTERN-stelian:uC0qK5VjzfyeAWyc@cape-acceptance.pnhd1.mongodb.net/AssetManager-acc";
+const url = "URL";
 
 const dbName = "cape_local";
 const collectionName = "collection";
